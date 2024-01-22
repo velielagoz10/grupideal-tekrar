@@ -40,3 +40,19 @@ $(document).ready(function () {
     });
   });
 });
+
+// ..........
+document.addEventListener("DOMContentLoaded", function () {
+  var chaseElement = document.querySelector(".sk-chase");
+  chaseElement.style.animationPlayState = "running";
+
+  var dotElements = document.querySelectorAll(".sk-chase-dot");
+  dotElements.forEach(function (dot, index) {
+    dot.style.animationPlayState = "running";
+    dot.style.animationDelay = "-" + (1.1 - 0.1 * index) + "s";
+
+    var dotBefore = dot.querySelector(":before");
+    dotBefore.style.animationPlayState = "running";
+    dotBefore.style.animationDelay = "-" + (1.1 - 0.1 * index) + "s";
+  });
+});
