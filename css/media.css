@@ -1,0 +1,33 @@
+/* ..768px.. */
+@media (max-width: 768px) {
+  #slider .carousel-item img {
+    height: 250px !important;
+  }
+  #footer .logo {
+    display: none;
+  }
+  #footer .copy {
+    margin-top: 20px;
+  }
+  #iletişim .adres {
+    font-size: 25px !important;
+  }
+  #iletişim .form iframe {
+    margin-top: 7px;
+  }
+}
+/* ..500px.. */
+@media (max-width: 500px) {
+  #ürünler .ürün-özelik {
+    font-size: 15px !important;
+  }
+  #ürünler .ürün-resim a img {
+    width: 160px !important;
+  }
+  #ürünler .ürün-isim {
+    font-size: 20px !important;
+  }
+  #iletişim .adres {
+    font-size: 20px !important;
+  }
+}
