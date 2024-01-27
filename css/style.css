@@ -123,6 +123,7 @@ body {
 
 #geliştirici .geliştirici-logo {
   width: 100%;
+  padding:0;
   display: flex;
   justify-content: space-evenly;
 }
