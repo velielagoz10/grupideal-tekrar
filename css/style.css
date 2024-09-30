@@ -169,6 +169,11 @@ body {
   -webkit-filter: none;
   filter: none;
 }
+#galari .container div {
+  flex-grow: 1;
+  overflow: hidden;
+
+}
 #ürünler {
   margin-top: 140px;
   margin-bottom: 100px;
