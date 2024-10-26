@@ -6,6 +6,9 @@ window.addEventListener("load", function () {
   // Preloader'ı gizle ve içerik göster
   preloader.style.display = "none";
   content.style.display = "block";
+  content.style.display = "flex";
+  content.style.flexDirection = "column";
+  content.style.height = "100%";
 
   // İçeriğin görünmesini sağla (yumuşak geçiş)
   setTimeout(() => {
