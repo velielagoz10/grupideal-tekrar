@@ -8,325 +8,339 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="nevbar">
-      <nav class="navbar navbar-expand-md">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    <span class="content">
+      <header id="nevbar">
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <a class="navbar-brand bekle" href="index.html"
+              ><img
+                id="nevber_logo"
+                src="img/logo.png"
+                alt="grup ideal madencilik"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="bi bi-three-dots-vertical"></i></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  id="navber_menu"
+                  class="navbar-nav justify-content-end flex-grow-1"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Ana Sayfa</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="urunler.html">Ürünler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="iletişim.html">İletişim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="galeri.html">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="galari">
         <div class="container">
-          <a class="navbar-brand bekle" href="index.html"
-            ><img
-              id="nevber_logo"
-              src="img/logo.png"
-              alt="grup ideal madencilik"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="bi bi-three-dots-vertical"></i></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+          <div class="row g-1">
+            <div class="col-md-4">
+              <a href="img/galeri/1.jpg" data-lightbox="example-set">
+                <img src="img/galeri/1.jpg" alt="grup ideal madencilik" />
+              </a>
             </div>
-            <div class="offcanvas-body">
-              <ul
-                id="navber_menu"
-                class="navbar-nav justify-content-end flex-grow-1"
-              >
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Ana Sayfa</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="urunler.html">Ürünler</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="iletişim.html">İletişim</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="galeri.html">Galeri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
-                </li>
-              </ul>
+            <div class="col-md-4">
+              <a href="img/galeri/2.jpg" data-lightbox="example-set">
+                <img src="img/galeri/2.jpg" alt="grup ideal madencilik" />
+              </a>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section id="galari">
-      <div class="container">
-        <div class="row g-1">
-          <div class="col-md-4">
-            <a href="img/galeri/1.jpg" data-lightbox="example-set">
-              <img src="img/galeri/1.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/2.jpg" data-lightbox="example-set">
-              <img src="img/galeri/2.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/3.jpg" data-lightbox="example-set">
-              <img src="img/galeri/3.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/4.jpg" data-lightbox="example-set">
-              <img src="img/galeri/4.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/5.jpg" data-lightbox="example-set">
-              <img src="img/galeri/5.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/6.jpg" data-lightbox="example-set">
-              <img src="img/galeri/6.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/7.jpg" data-lightbox="example-set">
-              <img src="img/galeri/7.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/8.jpg" data-lightbox="example-set">
-              <img src="img/galeri/8.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/9.jpg" data-lightbox="example-set">
-              <img src="img/galeri/9.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/10.jpg" data-lightbox="example-set">
-              <img src="img/galeri/10.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/11.jpg" data-lightbox="example-set">
-              <img src="img/galeri/11.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/12.jpg" data-lightbox="example-set">
-              <img src="img/galeri/12.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/13.jpg" data-lightbox="example-set">
-              <img src="img/galeri/13.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/14.jpg" data-lightbox="example-set">
-              <img src="img/galeri/14.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/15.jpg" data-lightbox="example-set">
-              <img src="img/galeri/15.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/16.jpg" data-lightbox="example-set">
-              <img src="img/galeri/16.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
+            <div class="col-md-4">
+              <a href="img/galeri/3.jpg" data-lightbox="example-set">
+                <img src="img/galeri/3.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/4.jpg" data-lightbox="example-set">
+                <img src="img/galeri/4.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/5.jpg" data-lightbox="example-set">
+                <img src="img/galeri/5.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/6.jpg" data-lightbox="example-set">
+                <img src="img/galeri/6.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/7.jpg" data-lightbox="example-set">
+                <img src="img/galeri/7.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/8.jpg" data-lightbox="example-set">
+                <img src="img/galeri/8.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/9.jpg" data-lightbox="example-set">
+                <img src="img/galeri/9.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/10.jpg" data-lightbox="example-set">
+                <img src="img/galeri/10.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4 lazy">
+              <a href="img/galeri/11.jpg" data-lightbox="example-set">
+                <img src="img/galeri/11.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/12.jpg" data-lightbox="example-set">
+                <img src="img/galeri/12.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/13.jpg" data-lightbox="example-set">
+                <img src="img/galeri/13.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/14.jpg" data-lightbox="example-set">
+                <img src="img/galeri/14.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/15.jpg" data-lightbox="example-set">
+                <img src="img/galeri/15.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/16.jpg" data-lightbox="example-set">
+                <img src="img/galeri/16.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
 
-          <div class="col-md-4">
-            <a href="img/galeri/17.jpg" data-lightbox="example-set">
-              <img src="img/galeri/17.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/18.jpg" data-lightbox="example-set">
-              <img src="img/galeri/18.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/19.jpg" data-lightbox="example-set">
-              <img src="img/galeri/19.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/20.jpg" data-lightbox="example-set">
-              <img src="img/galeri/20.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/21.jpg" data-lightbox="example-set">
-              <img src="img/galeri/21.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/22.jpg" data-lightbox="example-set">
-              <img src="img/galeri/22.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/23.jpg" data-lightbox="example-set">
-              <img src="img/galeri/23.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/24.jpg" data-lightbox="example-set">
-              <img src="img/galeri/24.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/25.jpg" data-lightbox="example-set">
-              <img src="img/galeri/25.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/26.jpg" data-lightbox="example-set">
-              <img src="img/galeri/26.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/27.jpg" data-lightbox="example-set">
-              <img src="img/galeri/27.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/28.jpg" data-lightbox="example-set">
-              <img src="img/galeri/28.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/29.jpg" data-lightbox="example-set">
-              <img src="img/galeri/29.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/30.jpg" data-lightbox="example-set">
-              <img src="img/galeri/30.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/31.jpg" data-lightbox="example-set">
-              <img src="img/galeri/31.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="img/galeri/32.jpg" data-lightbox="example-set">
-              <img src="img/galeri/32.jpg" alt="grup ideal madencilik" />
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <section id="goTopButton">
-      <i onclick="goToTop()">
-        <img src="img/png/ok.png" alt="Sayfa başına dön"
-      /></i>
-    </section>
-    <section id="geliştirici">
-      <div
-        class="modal fade"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                Geliştirici
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+            <div class="col-md-4">
+              <a href="img/galeri/17.jpg" data-lightbox="example-set">
+                <img src="img/galeri/17.jpg" alt="grup ideal madencilik" />
+              </a>
             </div>
-            <div class="modal-body">Veli Elagöz</div>
-            <div class="modal-footer">
-              <ul class="geliştirici-logo">
-                <li>
-                  <a href="https://instagram.com/velielagoz10">
-                    <img src="img/png/instagram.png" alt="instagram" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/Veli.elag">
-                    <img src="img/png/facebook.png" alt="facebook" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/Velielagoz10">
-                    <img src="img/png/twiter.png" alt="twiter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/velielagoz10">
-                    <img src="img/png/github.png" alt="github" />
-                  </a>
-                </li>
-              </ul>
+            <div class="col-md-4">
+              <a href="img/galeri/18.jpg" data-lightbox="example-set">
+                <img src="img/galeri/18.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/19.jpg" data-lightbox="example-set">
+                <img src="img/galeri/19.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/20.jpg" data-lightbox="example-set">
+                <img src="img/galeri/20.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/21.jpg" data-lightbox="example-set">
+                <img src="img/galeri/21.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/22.jpg" data-lightbox="example-set">
+                <img src="img/galeri/22.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/23.jpg" data-lightbox="example-set">
+                <img src="img/galeri/23.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/24.jpg" data-lightbox="example-set">
+                <img src="img/galeri/24.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/25.jpg" data-lightbox="example-set">
+                <img src="img/galeri/25.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/26.jpg" data-lightbox="example-set">
+                <img src="img/galeri/26.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/27.jpg" data-lightbox="example-set">
+                <img src="img/galeri/27.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/28.jpg" data-lightbox="example-set">
+                <img src="img/galeri/28.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/29.jpg" data-lightbox="example-set">
+                <img src="img/galeri/29.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/30.jpg" data-lightbox="example-set">
+                <img src="img/galeri/30.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/31.jpg" data-lightbox="example-set">
+                <img src="img/galeri/31.jpg" alt="grup ideal madencilik" />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/galeri/32.jpg" data-lightbox="example-set">
+                <img src="img/galeri/32.jpg" alt="grup ideal madencilik" />
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <div class="row logo">
-        <div class="col">
-          <a href=""><img src="img/polatLogo.png" alt="polat madenclik" /></a>
-          <a href=""
-            ><img src="img/polyakLogo.png" alt=" polyak madenclik"
-          /></a>
-          <a href=""
-            ><img src="img/alaLogo.png" alt="grup ideal madencilik"
-          /></a>
+      </section>
+      <section id="goTopButton">
+        <i onclick="goToTop()">
+          <img src="img/png/ok.png" alt="Sayfa başına dön"
+        /></i>
+      </section>
+      <section id="geliştirici">
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Geliştirici
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Veli Elagöz</div>
+              <div class="modal-footer">
+                <ul class="geliştirici-logo">
+                  <li>
+                    <a href="https://instagram.com/velielagoz10">
+                      <img src="img/png/instagram.png" alt="instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/Veli.elag">
+                      <img src="img/png/facebook.png" alt="facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/Velielagoz10">
+                      <img src="img/png/twiter.png" alt="twiter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/velielagoz10">
+                      <img src="img/png/github.png" alt="github" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row copy">
-        <div class="col">
-          <span
-            >&copy;2011-<span id="copyright-year">2020</span> Grup İdeal
-            Madencilik</span
-          ><span>-Tüm hakları saklıdır.</span>
-          <a
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover float-end"
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <i class="bi bi-code-slash"></i>
-            Geliştirci
-          </a>
+      </section>
+      <footer id="footer">
+        <div class="row logo">
+          <div class="col">
+            <a href=""><img src="img/polatLogo.png" alt="polat madenclik" /></a>
+            <a href=""
+              ><img src="img/polyakLogo.png" alt=" polyak madenclik"
+            /></a>
+            <a href=""
+              ><img src="img/alaLogo.png" alt="grup ideal madencilik"
+            /></a>
+          </div>
         </div>
-      </div>
-    </footer>
-    <script src="javaScript/Script.js"></script>
+        <div class="row copy">
+          <div class="col">
+            <span
+              >&copy;2011-<span id="copyright-year">2020</span> Grup İdeal
+              Madencilik</span
+            ><span>-Tüm hakları saklıdır.</span>
+            <a
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover float-end"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="bi bi-code-slash"></i>
+              Geliştirci
+            </a>
+          </div>
+        </div>
+      </footer>
+    </span>
+
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
+    <script src="javaScript/Script.js"></script>
+    <script src="javaScript/yükleme.js"></script>
   </body>
 </html>

@@ -8,322 +8,339 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="nevbar">
-      <nav class="navbar navbar-expand-md">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img
-              id="nevber_logo"
-              src="img/logo.png"
-              alt="grup ideal madencilik"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="bi bi-three-dots-vertical"></i></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                id="navber_menu"
-                class="navbar-nav justify-content-end flex-grow-1"
-              >
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Ana Sayfa</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="urunler.html">Ürünler</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="iletişim.html">İletişim</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeri.html">Galeri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="iletişim">
-      <div class="container form">
-        <h2 class="my-3 form_animated">Bize Ulaşın</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card bg-dark shadow-lg">
-              <div class="card-body">
-                <div class="alert alert-warning">Lütfen formu doldurun.</div>
-                <form
-                  action="https://formspree.io/f/xvojypek"
-                  method="POST"
-                  class="row g-3 text-white was-validated"
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    <span class="content">
+      <header id="nevbar">
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                id="nevber_logo"
+                src="img/logo.png"
+                alt="grup ideal madencilik"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="bi bi-three-dots-vertical"></i></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  id="navber_menu"
+                  class="navbar-nav justify-content-end flex-grow-1"
                 >
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">E-posta</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="name" class="form-label"> İsim</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      required
-                      minlength="3"
-                    />
-                  </div>
-                  <div class="col-md-12">
-                    <label for="name" class="form-label">Telefon</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      class="form-control"
-                      required
-                      pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                      title="Lütfen telefon numarasını 0 koymadan bu formatta giriniz: XXX XXX XXXX"
-                      maxlength="12"
-                    />
-                  </div>
-                  <div class="col-md-12">
-                    <label for="subject" class="form-label">Konu</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      class="form-control"
-                      required
-                      minlength="5"
-                    />
-                  </div>
-                  <div class="col-md-12">
-                    <label for="message" class="form-label">Mesaj</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      class="form-control"
-                      required
-                      minlength="10"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-outline-warning" style="width: 100%">
-                      Mesajı Gönder
-                    </button>
-                  </div>
-                </form>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Ana Sayfa</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="urunler.html">Ürünler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="iletişim.html">İletişim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeri.html">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5685969501274!2d28.308399330190433!3d39.719224370730245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b6381002e2479f%3A0x4e6578f9381799af!2s%C4%B0deal%20Maden!5e0!3m2!1str!2str!4v1697526946106!5m2!1str!2str"
-              width="100%"
-              height="515"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="border border-5 shadow-lg"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="container adres">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <p class="text-center border-bottom border-4">OCAK</p>
-            <div class="col mb-3">
-              <a href="geo:39.719189, 28.311351" class="text-decoration-none">
-                <i class="bi bi-geo-alt">
-                  <span>İsaalan Mah. No:212 Kepsut/Balıkesir</span>
-                </i>
-              </a>
+        </nav>
+      </header>
+      <main id="iletişim">
+        <div class="container form">
+          <h2 class="my-3 form_animated">Bize Ulaşın</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card bg-dark shadow-lg">
+                <div class="card-body">
+                  <div class="alert alert-warning">Lütfen formu doldurun.</div>
+                  <form
+                    action="https://formspree.io/f/xvojypek"
+                    method="POST"
+                    class="row g-3 text-white was-validated"
+                  >
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">E-posta</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="name" class="form-label"> İsim</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        required
+                        minlength="3"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="name" class="form-label">Telefon</label>
+                      <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        class="form-control"
+                        required
+                        pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                        title="Lütfen telefon numarasını 0 koymadan bu formatta giriniz: XXX XXX XXXX"
+                        maxlength="12"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="subject" class="form-label">Konu</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        class="form-control"
+                        required
+                        minlength="5"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="message" class="form-label">Mesaj</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="form-control"
+                        required
+                        minlength="10"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="btn btn-outline-warning"
+                        style="width: 100%"
+                      >
+                        Mesajı Gönder
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="col mb-3">
-              <a href="tel:05303722005" class="text-decoration-none">
-                <i class="bi bi-phone">
-                  <span>0530 372 2005</span>
-                </i>
-              </a>
-            </div>
-            <div class="col mb-3">
-              <a href="tel:02667562025" class="text-decoration-none">
-                <i class="bi bi-telephone">
-                  <span>0266 576 2025</span>
-                </i>
-              </a>
-            </div>
-            <div class="col mb-3">
-              <a
-                href="mailto:bilgi@idealmadencilik.com"
-                class="text-decoration-none"
-              >
-                <i class="bi bi-envelope-at">
-                  <span>bilgi@idealmadencilik.com</span>
-                </i>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 mt-5 mt-md-0">
-            <p class="text-center border-bottom border-4">Depo</p>
-            <div class="col mb-3">
-              <a href="geo:39.097975, 27.316020" class="text-decoration-none">
-                <i class="bi bi-geo-alt">
-                  <span>Poyracık Mah. Küme Evleri Kınık/İzmir</span>
-                </i>
-              </a>
-            </div>
-            <div class="col mb-3">
-              <a href="tel:05303722005" class="text-decoration-none">
-                <i class="bi bi-phone">
-                  <span>0530 372 2005</span>
-                </i>
-              </a>
-            </div>
-            <div class="col mb-3">
-              <a href="tel:02665762025" class="text-decoration-none">
-                <i class="bi bi-telephone">
-                  <span>0266 576 2025</span>
-                </i>
-              </a>
-            </div>
-            <div class="col mb-3">
-              <a
-                href="mailto:bilgi@idealmadencilik.com"
-                class="text-decoration-none"
-              >
-                <i class="bi bi-envelope-at">
-                  <span>bilgi@idealmadencilik.com</span>
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <section id="goTopButton">
-      <i onclick="goToTop()">
-        <img src="img/png/ok.png" alt="Sayfa başına dön"
-      /></i>
-    </section>
-    <section id="geliştirici">
-      <div
-        class="modal fade"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                Geliştirici
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">Veli Elagöz</div>
-            <div class="modal-footer">
-              <ul class="geliştirici-logo">
-                <li>
-                  <a href="https://instagram.com/velielagoz10">
-                    <img src="img/png/instagram.png" alt="instagram" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/Veli.elag">
-                    <img src="img/png/facebook.png" alt="facebook" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/Velielagoz10">
-                    <img src="img/png/twiter.png" alt="twiter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/velielagoz10">
-                    <img src="img/png/github.png" alt="github" />
-                  </a>
-                </li>
-              </ul>
+            <div class="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5685969501274!2d28.308399330190433!3d39.719224370730245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b6381002e2479f%3A0x4e6578f9381799af!2s%C4%B0deal%20Maden!5e0!3m2!1str!2str!4v1697526946106!5m2!1str!2str"
+                width="100%"
+                height="515"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border border-5 shadow-lg"
+              ></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <div class="row logo">
-        <div class="col">
-          <a href="http://www.polatkomur.com"
-            ><img src="img/polatLogo.png" alt="polat madenclik"
-          /></a>
-          <a href="#"
-            ><img src="img/polyakLogo.png" alt=" polyak madenclik"
-          /></a>
-          <a href="index.html"
-            ><img src="img/alaLogo.png" alt="grup ideal madencilik"
-          /></a>
+        <div class="container adres">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <p class="text-center border-bottom border-4">OCAK</p>
+              <div class="col mb-3">
+                <a href="geo:39.719189, 28.311351" class="text-decoration-none">
+                  <i class="bi bi-geo-alt">
+                    <span>İsaalan Mah. No:212 Kepsut/Balıkesir</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a href="tel:05303722005" class="text-decoration-none">
+                  <i class="bi bi-phone">
+                    <span>0530 372 2005</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a href="tel:02667562025" class="text-decoration-none">
+                  <i class="bi bi-telephone">
+                    <span>0266 576 2025</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a
+                  href="mailto:bilgi@idealmadencilik.com"
+                  class="text-decoration-none"
+                >
+                  <i class="bi bi-envelope-at">
+                    <span>bilgi@idealmadencilik.com</span>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-md-0">
+              <p class="text-center border-bottom border-4">Depo</p>
+              <div class="col mb-3">
+                <a href="geo:39.097975, 27.316020" class="text-decoration-none">
+                  <i class="bi bi-geo-alt">
+                    <span>Poyracık Mah. Küme Evleri Kınık/İzmir</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a href="tel:05303722005" class="text-decoration-none">
+                  <i class="bi bi-phone">
+                    <span>0530 372 2005</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a href="tel:02665762025" class="text-decoration-none">
+                  <i class="bi bi-telephone">
+                    <span>0266 576 2025</span>
+                  </i>
+                </a>
+              </div>
+              <div class="col mb-3">
+                <a
+                  href="mailto:bilgi@idealmadencilik.com"
+                  class="text-decoration-none"
+                >
+                  <i class="bi bi-envelope-at">
+                    <span>bilgi@idealmadencilik.com</span>
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row copy">
-        <div class="col">
-          <span
-            >&copy;2011-<span id="copyright-year">2020</span> Grup İdeal
-            Madencilik</span
-          ><span>-Tüm hakları saklıdır.</span>
-          <a
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover float-end"
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <i class="bi bi-code-slash"></i>
-            Geliştirci
-          </a>
+      </main>
+      <section id="goTopButton">
+        <i onclick="goToTop()">
+          <img src="img/png/ok.png" alt="Sayfa başına dön"
+        /></i>
+      </section>
+      <section id="geliştirici">
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Geliştirici
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Veli Elagöz</div>
+              <div class="modal-footer">
+                <ul class="geliştirici-logo">
+                  <li>
+                    <a href="https://instagram.com/velielagoz10">
+                      <img src="img/png/instagram.png" alt="instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/Veli.elag">
+                      <img src="img/png/facebook.png" alt="facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/Velielagoz10">
+                      <img src="img/png/twiter.png" alt="twiter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/velielagoz10">
+                      <img src="img/png/github.png" alt="github" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <footer id="footer">
+        <div class="row logo">
+          <div class="col">
+            <a href="http://www.polatkomur.com"
+              ><img src="img/polatLogo.png" alt="polat madenclik"
+            /></a>
+            <a href="#"
+              ><img src="img/polyakLogo.png" alt=" polyak madenclik"
+            /></a>
+            <a href="index.html"
+              ><img src="img/alaLogo.png" alt="grup ideal madencilik"
+            /></a>
+          </div>
+        </div>
+        <div class="row copy">
+          <div class="col">
+            <span
+              >&copy;2011-<span id="copyright-year">2020</span> Grup İdeal
+              Madencilik</span
+            ><span>-Tüm hakları saklıdır.</span>
+            <a
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover float-end"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="bi bi-code-slash"></i>
+              Geliştirci
+            </a>
+          </div>
+        </div>
+      </footer>
+    </span>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="javaScript/Script.js"></script>
+    <script src="javaScript/yükleme.js"></script>
   </body>
 </html>
