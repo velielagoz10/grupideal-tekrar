@@ -260,7 +260,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #ffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +296,7 @@ p {
   display: block;
   width: 25%;
   height: 25%;
-  background-color: #fff;
+  background-color: #dc3545;
   border-radius: 100%;
   animation: sk-chase-dot-before 2s infinite ease-in-out both;
 }
