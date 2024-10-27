@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
   const content = document.querySelector(".content");
 
   // Minimum preloader süresi: 500ms
-  const minimumPreloaderTime = 600;
+  const minimumPreloaderTime = 1000;
 
   // Sayfa yüklenme zamanı ile preloader başlama zamanını hesapla
   const loadStartTime = performance.now();
